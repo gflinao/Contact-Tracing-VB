@@ -72,6 +72,25 @@
         Else
             'Do Nothing
         End If
+        cform.WriteLine("")
+
+        TxtbxFN.Clear()
+        TxtbxAge.Clear()
+        TxtbxMN.Clear()
+        TxtbxEAdd.Clear()
+        TxtbxAdd.Clear()
+
+        CbY1.Checked = False
+        CbY2.Checked = False
+        CbN1.Checked = False
+        CbN2.Checked = False
+
+        CbFever.Checked = False
+        CbCough.Checked = False
+        CbLoss.Checked = False
+        CbNone.Checked = False
+
+        MessageBox.Show("Trace2.0 Form Submitted!")
 
         cform.Close()
 

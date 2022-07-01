@@ -47,11 +47,11 @@ Partial Class TRACE
         Me.BtnSub = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.BtnStart = New System.Windows.Forms.Button()
+        Me.BtnSave = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.BtnStop = New System.Windows.Forms.Button()
+        Me.BtnScan = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -317,23 +317,23 @@ Partial Class TRACE
         Me.PictureBox1.TabIndex = 23
         Me.PictureBox1.TabStop = False
         '
-        'Button1
+        'BtnStart
         '
-        Me.Button1.Location = New System.Drawing.Point(360, 288)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(64, 22)
-        Me.Button1.TabIndex = 24
-        Me.Button1.Text = "Start"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnStart.Location = New System.Drawing.Point(360, 288)
+        Me.BtnStart.Name = "BtnStart"
+        Me.BtnStart.Size = New System.Drawing.Size(64, 22)
+        Me.BtnStart.TabIndex = 24
+        Me.BtnStart.Text = "Start"
+        Me.BtnStart.UseVisualStyleBackColor = True
         '
-        'Button4
+        'BtnSave
         '
-        Me.Button4.Location = New System.Drawing.Point(360, 471)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(90, 32)
-        Me.Button4.TabIndex = 27
-        Me.Button4.Text = "Save Data"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.BtnSave.Location = New System.Drawing.Point(360, 471)
+        Me.BtnSave.Name = "BtnSave"
+        Me.BtnSave.Size = New System.Drawing.Size(90, 32)
+        Me.BtnSave.TabIndex = 27
+        Me.BtnSave.Text = "Save Data"
+        Me.BtnSave.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
@@ -343,23 +343,23 @@ Partial Class TRACE
         Me.TextBox1.Size = New System.Drawing.Size(210, 144)
         Me.TextBox1.TabIndex = 28
         '
-        'Button2
+        'BtnStop
         '
-        Me.Button2.Location = New System.Drawing.Point(432, 288)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(64, 22)
-        Me.Button2.TabIndex = 29
-        Me.Button2.Text = "Stop"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnStop.Location = New System.Drawing.Point(432, 288)
+        Me.BtnStop.Name = "BtnStop"
+        Me.BtnStop.Size = New System.Drawing.Size(64, 22)
+        Me.BtnStop.TabIndex = 29
+        Me.BtnStop.Text = "Stop"
+        Me.BtnStop.UseVisualStyleBackColor = True
         '
-        'Button3
+        'BtnScan
         '
-        Me.Button3.Location = New System.Drawing.Point(506, 288)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(64, 22)
-        Me.Button3.TabIndex = 30
-        Me.Button3.Text = "Scan"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.BtnScan.Location = New System.Drawing.Point(506, 288)
+        Me.BtnScan.Name = "BtnScan"
+        Me.BtnScan.Size = New System.Drawing.Size(64, 22)
+        Me.BtnScan.TabIndex = 30
+        Me.BtnScan.Text = "Scan"
+        Me.BtnScan.UseVisualStyleBackColor = True
         '
         'TRACE
         '
@@ -367,11 +367,11 @@ Partial Class TRACE
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(582, 509)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.BtnScan)
+        Me.Controls.Add(Me.BtnStop)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnSave)
+        Me.Controls.Add(Me.BtnStart)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.BtnSub)
@@ -428,9 +428,9 @@ Partial Class TRACE
     Friend WithEvents BtnSub As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents BtnStart As Button
+    Friend WithEvents BtnSave As Button
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents BtnStop As Button
+    Friend WithEvents BtnScan As Button
 End Class

@@ -46,13 +46,13 @@ Partial Class TRACE
         Me.CbNone = New System.Windows.Forms.CheckBox()
         Me.BtnSub = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxCam = New System.Windows.Forms.PictureBox()
         Me.BtnStart = New System.Windows.Forms.Button()
         Me.BtnSave = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBoxData = New System.Windows.Forms.TextBox()
         Me.BtnStop = New System.Windows.Forms.Button()
         Me.BtnScan = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxCam, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TxtbxFN
@@ -309,13 +309,13 @@ Partial Class TRACE
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "Trace 2.0"
         '
-        'PictureBox1
+        'PictureBoxCam
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(360, 84)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(210, 191)
-        Me.PictureBox1.TabIndex = 23
-        Me.PictureBox1.TabStop = False
+        Me.PictureBoxCam.Location = New System.Drawing.Point(360, 84)
+        Me.PictureBoxCam.Name = "PictureBoxCam"
+        Me.PictureBoxCam.Size = New System.Drawing.Size(210, 191)
+        Me.PictureBoxCam.TabIndex = 23
+        Me.PictureBoxCam.TabStop = False
         '
         'BtnStart
         '
@@ -335,13 +335,13 @@ Partial Class TRACE
         Me.BtnSave.Text = "Save Data"
         Me.BtnSave.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'TextBoxData
         '
-        Me.TextBox1.Location = New System.Drawing.Point(360, 320)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(210, 144)
-        Me.TextBox1.TabIndex = 28
+        Me.TextBoxData.Location = New System.Drawing.Point(360, 320)
+        Me.TextBoxData.Multiline = True
+        Me.TextBoxData.Name = "TextBoxData"
+        Me.TextBoxData.Size = New System.Drawing.Size(210, 144)
+        Me.TextBoxData.TabIndex = 28
         '
         'BtnStop
         '
@@ -369,10 +369,10 @@ Partial Class TRACE
         Me.ClientSize = New System.Drawing.Size(582, 509)
         Me.Controls.Add(Me.BtnScan)
         Me.Controls.Add(Me.BtnStop)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBoxData)
         Me.Controls.Add(Me.BtnSave)
         Me.Controls.Add(Me.BtnStart)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.PictureBoxCam)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.BtnSub)
         Me.Controls.Add(Me.CbNone)
@@ -398,7 +398,7 @@ Partial Class TRACE
         Me.Controls.Add(Me.TxtbxFN)
         Me.Name = "TRACE"
         Me.Text = "Form1"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxCam, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -427,10 +427,10 @@ Partial Class TRACE
     Friend WithEvents CbNone As CheckBox
     Friend WithEvents BtnSub As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBoxCam As PictureBox
     Friend WithEvents BtnStart As Button
     Friend WithEvents BtnSave As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBoxData As TextBox
     Friend WithEvents BtnStop As Button
     Friend WithEvents BtnScan As Button
 End Class

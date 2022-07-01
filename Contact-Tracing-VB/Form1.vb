@@ -124,4 +124,39 @@ Public Class TRACE
         End Try
     End Sub
 
+    Private Sub BtnStart_Click(sender As Object, e As EventArgs) Handles BtnStart.Click
+        StartQRCam()
+        TextBoxData.Clear()
+    End Sub
+
+    Private Sub BtnStop_Click(sender As Object, e As EventArgs) Handles BtnStop.Click
+        StopQRCam()
+    End Sub
+
+    Private Sub BtnScan_Click(sender As Object, e As EventArgs) Handles BtnScan.Click
+        Try
+            StopQRCam()
+            QRreader = New QRCodeDecoder
+            TextBoxData.Text = QRreader.Decode(New Data.QRCodeBitmapImage(PictureBoxCam.Image))
+            MsgBox("Scanned Successfully!")
+        Catch ex As Exception
+            StartQRCam()
+        End Try
+    End Sub
+
+    Private Sub PictureBoxCam_Click(sender As Object, e As EventArgs) Handles PictureBoxCam.Click
+
+    End Sub
+
+    Private Sub QRCam_ImageCaptured(source As Object, e As WebcamEventArgs) Handles QRCam.ImageCaptured
+        PictureBoxCam.Image = e.WebCamImage
+    End Sub
+
+    Private Sub BtnSave_Click(sender As Object, e As EventArgs) Handles BtnSave.Click
+        Dim SaveDt As New SaveFileDialog
+        SaveDt.Filter = "PNG|*.png"
+        If SaveDt.ShowDialog() = DialogResult.OK Then
+            PictureBoxCam.Image.Save(SaveDt.FileName, Imaging.ImageFormat.Png)
+        End If
+    End Sub
 End Class

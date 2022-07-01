@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class TRACE
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TRACE))
         Me.TxtbxFN = New System.Windows.Forms.TextBox()
         Me.TxtbxAge = New System.Windows.Forms.TextBox()
         Me.TxtbxMN = New System.Windows.Forms.TextBox()
@@ -302,7 +302,7 @@ Partial Class Form1
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "Trace 2.0"
         '
-        'Form1
+        'TRACE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -331,7 +331,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TxtbxMN)
         Me.Controls.Add(Me.TxtbxAge)
         Me.Controls.Add(Me.TxtbxFN)
-        Me.Name = "Form1"
+        Me.Name = "TRACE"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()

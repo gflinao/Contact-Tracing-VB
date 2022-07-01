@@ -1,4 +1,7 @@
-﻿Public Class TRACE
+﻿Imports WebCam_Capture
+Imports MessagingToolkit.QRCode.Codec
+
+Public Class TRACE
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TxtbxFN.TextChanged
 
     End Sub
@@ -22,6 +25,8 @@
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CbN1.CheckedChanged
 
     End Sub
+
+
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -95,4 +100,28 @@
         cform.Close()
 
     End Sub
+
+    WithEvents QRCam As WebCamCapture
+    Dim QRreader As QRCodeDecoder
+
+    Private Sub StartQRCam()
+        Try
+            StopQRCam()
+            QRCam = New WebCamCapture
+            QRCam.Start(0)
+            QRCam.Start(0)
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub StopQRCam()
+        Try
+            QRCam.Stop()
+            QRCam.Dispose()
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
 End Class

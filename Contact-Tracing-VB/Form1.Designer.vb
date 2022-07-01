@@ -46,6 +46,13 @@ Partial Class TRACE
         Me.CbNone = New System.Windows.Forms.CheckBox()
         Me.BtnSub = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TxtbxFN
@@ -283,7 +290,7 @@ Partial Class TRACE
         Me.BtnSub.BackColor = System.Drawing.Color.ForestGreen
         Me.BtnSub.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSub.ForeColor = System.Drawing.Color.White
-        Me.BtnSub.Location = New System.Drawing.Point(214, 466)
+        Me.BtnSub.Location = New System.Drawing.Point(9, 470)
         Me.BtnSub.Name = "BtnSub"
         Me.BtnSub.Size = New System.Drawing.Size(99, 33)
         Me.BtnSub.TabIndex = 21
@@ -302,12 +309,70 @@ Partial Class TRACE
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "Trace 2.0"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(360, 84)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(210, 191)
+        Me.PictureBox1.TabIndex = 23
+        Me.PictureBox1.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(360, 288)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(64, 22)
+        Me.Button1.TabIndex = 24
+        Me.Button1.Text = "Start"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(360, 471)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(90, 32)
+        Me.Button4.TabIndex = 27
+        Me.Button4.Text = "Save Data"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(360, 320)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(210, 144)
+        Me.TextBox1.TabIndex = 28
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(432, 288)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(64, 22)
+        Me.Button2.TabIndex = 29
+        Me.Button2.Text = "Stop"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(506, 288)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(64, 22)
+        Me.Button3.TabIndex = 30
+        Me.Button3.Text = "Scan"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'TRACE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(326, 509)
+        Me.ClientSize = New System.Drawing.Size(582, 509)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.BtnSub)
         Me.Controls.Add(Me.CbNone)
@@ -333,6 +398,7 @@ Partial Class TRACE
         Me.Controls.Add(Me.TxtbxFN)
         Me.Name = "TRACE"
         Me.Text = "Form1"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -361,4 +427,10 @@ Partial Class TRACE
     Friend WithEvents CbNone As CheckBox
     Friend WithEvents BtnSub As Button
     Friend WithEvents Label4 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class

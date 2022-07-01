@@ -52,6 +52,8 @@ Partial Class TRACE
         Me.TextBoxData = New System.Windows.Forms.TextBox()
         Me.BtnStop = New System.Windows.Forms.Button()
         Me.BtnScan = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.PictureBoxCam, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -311,6 +313,7 @@ Partial Class TRACE
         '
         'PictureBoxCam
         '
+        Me.PictureBoxCam.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBoxCam.Location = New System.Drawing.Point(360, 84)
         Me.PictureBoxCam.Name = "PictureBoxCam"
         Me.PictureBoxCam.Size = New System.Drawing.Size(210, 191)
@@ -319,54 +322,94 @@ Partial Class TRACE
         '
         'BtnStart
         '
+        Me.BtnStart.BackColor = System.Drawing.Color.ForestGreen
+        Me.BtnStart.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnStart.ForeColor = System.Drawing.Color.White
         Me.BtnStart.Location = New System.Drawing.Point(360, 288)
         Me.BtnStart.Name = "BtnStart"
         Me.BtnStart.Size = New System.Drawing.Size(64, 22)
         Me.BtnStart.TabIndex = 24
         Me.BtnStart.Text = "Start"
-        Me.BtnStart.UseVisualStyleBackColor = True
+        Me.BtnStart.UseVisualStyleBackColor = False
         '
         'BtnSave
         '
+        Me.BtnSave.BackColor = System.Drawing.Color.LimeGreen
+        Me.BtnSave.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSave.ForeColor = System.Drawing.Color.White
         Me.BtnSave.Location = New System.Drawing.Point(360, 471)
         Me.BtnSave.Name = "BtnSave"
         Me.BtnSave.Size = New System.Drawing.Size(90, 32)
         Me.BtnSave.TabIndex = 27
         Me.BtnSave.Text = "Save Data"
-        Me.BtnSave.UseVisualStyleBackColor = True
+        Me.BtnSave.UseVisualStyleBackColor = False
         '
         'TextBoxData
         '
-        Me.TextBoxData.Location = New System.Drawing.Point(360, 320)
+        Me.TextBoxData.BackColor = System.Drawing.Color.White
+        Me.TextBoxData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxData.Location = New System.Drawing.Point(360, 337)
         Me.TextBoxData.Multiline = True
         Me.TextBoxData.Name = "TextBoxData"
-        Me.TextBoxData.Size = New System.Drawing.Size(210, 144)
+        Me.TextBoxData.Size = New System.Drawing.Size(210, 127)
         Me.TextBoxData.TabIndex = 28
         '
         'BtnStop
         '
+        Me.BtnStop.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BtnStop.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnStop.ForeColor = System.Drawing.Color.White
         Me.BtnStop.Location = New System.Drawing.Point(432, 288)
         Me.BtnStop.Name = "BtnStop"
         Me.BtnStop.Size = New System.Drawing.Size(64, 22)
         Me.BtnStop.TabIndex = 29
         Me.BtnStop.Text = "Stop"
-        Me.BtnStop.UseVisualStyleBackColor = True
+        Me.BtnStop.UseVisualStyleBackColor = False
         '
         'BtnScan
         '
+        Me.BtnScan.BackColor = System.Drawing.Color.YellowGreen
+        Me.BtnScan.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnScan.ForeColor = System.Drawing.Color.White
         Me.BtnScan.Location = New System.Drawing.Point(506, 288)
         Me.BtnScan.Name = "BtnScan"
         Me.BtnScan.Size = New System.Drawing.Size(64, 22)
         Me.BtnScan.TabIndex = 30
         Me.BtnScan.Text = "Scan"
-        Me.BtnScan.UseVisualStyleBackColor = True
+        Me.BtnScan.UseVisualStyleBackColor = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(360, 316)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(136, 18)
+        Me.Label5.TabIndex = 31
+        Me.Label5.Text = "Scanned QR Code:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Consolas", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.ForestGreen
+        Me.Label7.Location = New System.Drawing.Point(357, 9)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(210, 64)
+        Me.Label7.TabIndex = 33
+        Me.Label7.Text = "Trace QR Code" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Scanner 2.0"
         '
         'TRACE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(582, 509)
+        Me.ClientSize = New System.Drawing.Size(589, 509)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.BtnScan)
         Me.Controls.Add(Me.BtnStop)
         Me.Controls.Add(Me.TextBoxData)
@@ -433,4 +476,6 @@ Partial Class TRACE
     Friend WithEvents TextBoxData As TextBox
     Friend WithEvents BtnStop As Button
     Friend WithEvents BtnScan As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label7 As Label
 End Class

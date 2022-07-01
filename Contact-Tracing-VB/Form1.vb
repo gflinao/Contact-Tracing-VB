@@ -159,4 +159,8 @@ Public Class TRACE
             PictureBoxCam.Image.Save(SaveDt.FileName, Imaging.ImageFormat.Png)
         End If
     End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
 End Class

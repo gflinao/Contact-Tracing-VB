@@ -3,10 +3,13 @@ C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\bin\Debug\Cont
 C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\bin\Debug\Contact-Tracing-VB.pdb
 C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\bin\Debug\Contact-Tracing-VB.xml
 C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\obj\Debug\Contact-Tracing-VB.vbproj.AssemblyReference.cache
-C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\obj\Debug\Contact_Tracing_VB.Form1.resources
 C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\obj\Debug\Contact_Tracing_VB.Resources.resources
 C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\obj\Debug\Contact-Tracing-VB.vbproj.GenerateResource.cache
 C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\obj\Debug\Contact-Tracing-VB.vbproj.CoreCompileInputs.cache
 C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\obj\Debug\Contact-Tracing-VB.exe
 C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\obj\Debug\Contact-Tracing-VB.xml
 C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\obj\Debug\Contact-Tracing-VB.pdb
+C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\bin\Debug\WebCam_Capture.dll
+C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\obj\Debug\Contact_Tracing_VB.TRACE.resources
+C:\Users\admin\source\repos\Contact-Tracing-VB\Contact-Tracing-VB\obj\Debug\Contact-Tracing-VB.vbproj.CopyComplete
